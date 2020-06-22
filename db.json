@@ -1,44 +1,56 @@
 {
- "logs" : [
-   {
-     "id": 1,
-     "message": "Changed hard drive on workstation 005",
-     "attention": false,
-     "date": "03-02-2019",
-     "tech": "Sam Smith"
-   },
-
-   {
-    "id": 2,
-    "message": "Workstation 007 not posting",
-    "attention": true,
-    "date": "03-02-2019",
-    "tech": "John Doe"
-  },
-
-  {
-    "id": 3,
-    "message": "Changed memory on workstation 123",
-    "attention": false,
-    "date": "03-02-2019",
-    "tech": "Sara Wilson"
-  }
- ],
- "techs": [
-   {
-     "id": 1,
-     "firstName": "Sarthak",
-     "lastName": "Kundra"
-   },
-   {
-    "id": 2,
-    "firstName": "John",
-    "lastName": "Doe"
-  },
-  {
-    "id": 3,
-    "firstName": "Sam",
-    "lastName": "Smith"
-  }
- ]
+  "logs": [
+    {
+      "id": 1,
+      "message": "Changed hard drive on workstation 005",
+      "attention": false,
+      "date": "03-02-2019",
+      "tech": "Sam Smith"
+    },
+    {
+      "id": 2,
+      "message": "Workstation 007 not posting",
+      "attention": true,
+      "date": "03-02-2019",
+      "tech": "John Doe"
+    },
+    {
+      "id": 3,
+      "message": "Changed memory on workstation 123",
+      "attention": false,
+      "date": "03-02-2019",
+      "tech": "Sara Wilson"
+    },
+    {
+      "id": 4,
+      "message": "Initiatilized redux on web app",
+      "attention": false,
+      "date": "18-06-2020",
+      "tech": "Sarthak Kundra"
+    },
+    {
+      "id": 5,
+      "message": "back-end connected to front-end",
+      "attention": false,
+      "tech": "Name 1",
+      "date": "2020-06-22T19:24:22.564Z"
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "Sarthak",
+      "lastName": "Kundra"
+    },
+    {
+      "id": 2,
+      "firstName": "John",
+      "lastName": "Doe"
+    },
+    {
+      "id": 3,
+      "firstName": "Sam",
+      "lastName": "Smith"
+    }
+  ]
 }
