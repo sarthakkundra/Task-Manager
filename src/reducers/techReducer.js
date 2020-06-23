@@ -4,6 +4,7 @@ import {
     DELETE_TECH,
     TECHS_ERROR,
     SET_LOADING,
+    DELETE_TECHS,
   } from "../actions/types";
 
 const initialState = {
@@ -19,6 +20,16 @@ export default (state = initialState, action) => {
               ...state,
               techs: action.payload,
               loading: false
+          }
+        case ADD_TECH:
+          return{
+            ...state,
+            techs: [...state.techs, action.payload]
+          }
+        case DELETE_TECH:
+          return{
+            ...state,
+            techs: state.techs.map((tech) => tech.id === action.payload ? null : tech)
           }
       case TECHS_ERROR:
           return{

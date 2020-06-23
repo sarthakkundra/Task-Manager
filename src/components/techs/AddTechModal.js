@@ -1,18 +1,26 @@
 import React, { useState } from "react";
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+
+import { addTech } from '../../actions/techActions';
 
 import M from 'materialize-css/dist/js/materialize.min.js';
 
-const AddTechModal = () => {
-  const [firstName, setFirstName] = useState("");
+const AddTechModal = ({ addTech }) => {
+
+  const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
 
   const onSubmit = (e) => {
     if(firstName === '' || lastName === '' ){
       M.toast({html: 'Please enter the full name of the technician'});
     } else{
-        console.log(firstName, lastName);
-        setFirstName('');
-        setLastName('');
+        const newTech = {
+          firstName,
+          lastName
+        }
+        addTech(newTech);
+ 
     }
   }
   return (
@@ -25,7 +33,7 @@ const AddTechModal = () => {
               type='text'
               name='firstName'
               value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
+              onChange = {(e) => setFirstName(e.target.value)}
             />
             <label htmlFor='Message'>First Name</label>
             </div>
@@ -38,7 +46,7 @@ const AddTechModal = () => {
               type='text'
               name='lastName'
               value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
+              onChange = {(e) => setLastName(e.target.value)}
             />
             <label htmlFor='Message'>Last Name</label>
             </div>
@@ -53,4 +61,4 @@ const AddTechModal = () => {
 };
 
 
-export default AddTechModal;
+export default connect(null, { addTech })(AddTechModal);

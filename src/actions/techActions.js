@@ -21,6 +21,46 @@ export const getTechs = () => async (dispatch) => {
 
 };
 
+export const addTech = (tech) => async (dispatch) => {
+
+  try {
+
+    const res = await fetch('/techs', {
+      method: 'POST',
+      body: JSON.stringify(tech),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    
+    })
+    const data = await res.json()
+
+    dispatch({ type: ADD_TECH, payload: data });
+
+  } catch (e) {
+    
+    dispatch({ type: TECHS_ERROR, payload: e.response.statusText });
+  }
+}
+
+export const deleteTech = (id) => async (dispatch) => {
+
+  try {
+
+    await fetch(`/techs/${id}`, {
+      method: 'DELETE'
+    })
+  
+    dispatch({ type: DELETE_TECH, payload: id })
+
+  } catch (e) {
+    
+    dispatch({ type: TECHS_ERROR, payload: e.response.statusText });
+
+  }
+
+}
+
 export const setLoading = () => {
   return {
     payload: SET_LOADING,
