@@ -1,39 +1,25 @@
 {
   "logs": [
     {
-      "id": 1,
-      "message": "Changed hard drive on workstation 005",
-      "attention": false,
-      "date": "03-02-2019",
-      "tech": "Sam Smith"
-    },
-    {
-      "id": 2,
-      "message": "Workstation 007 not posting",
-      "attention": true,
-      "date": "03-02-2019",
-      "tech": "John Doe"
-    },
-    {
-      "id": 3,
-      "message": "Changed memory on workstation 123",
-      "attention": false,
-      "date": "03-02-2019",
-      "tech": "Sara Wilson"
-    },
-    {
-      "id": 4,
-      "message": "Initiatilized redux on web app",
-      "attention": false,
-      "date": "18-06-2020",
-      "tech": "Sarthak Kundra"
-    },
-    {
-      "id": 5,
-      "message": "back-end connected to front-end",
+      "message": "Add prop-types to all components",
       "attention": false,
       "tech": "Name 1",
-      "date": "2020-06-22T19:24:22.564Z"
+      "date": 1596578677548,
+      "id": 1
+    },
+    {
+      "message": "Fix oAuth client error",
+      "attention": true,
+      "tech": "Name 2",
+      "date": 1596578695283,
+      "id": 2
+    },
+    {
+      "message": "Footer alignment issues",
+      "attention": false,
+      "tech": "Name 3",
+      "date": 1596578713104,
+      "id": 3
     }
   ],
   "techs": [

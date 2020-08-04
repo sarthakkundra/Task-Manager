@@ -20,7 +20,7 @@ const Logs = ({ log: { logs, loading }, getLogs }) => {
     <div className='container'>
       <ul className='collection with-header'>
         <li className='collection-header'>
-          <h4 className='center'>System Logs</h4>
+          <h4 className='center'>Issue Tracker</h4>
         </li>
         {!loading && logs.length == 0 ? (
           <h4>No logs to show</h4>
