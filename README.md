@@ -1,6 +1,4 @@
-# Project Title
-
-Issue Tracker
+# Issue Tracker
 
 ## Description
 
