@@ -27,7 +27,12 @@ Install all the dependencies
 npm install
 ```
 
+Starting the project locally
 
+```
+npm run dev
+```
+Checkout the project on port 3000 :)
 ## Contributing
 
 Follow standard Github's contribution guidelines.
