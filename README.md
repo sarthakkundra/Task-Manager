@@ -2,11 +2,11 @@
 
 ## Description
 
-Issue tracker is a take on the Github's issues page. It is a web app to keep tracks of all the tasks and issues in a small, closed source project. It helps streamline the work and helps in tracking problems easily thereby increasing the overall productivity.
+Task Manager is a take on the Github's issues page. It is a web app to keep tracks of all the tasks and issues in a small, closed source project. It helps streamline the work and helps in tracking problems easily thereby increasing the overall productivity.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 
 ### Installing
